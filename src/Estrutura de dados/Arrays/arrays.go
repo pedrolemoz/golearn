@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	arrayEstatico := [5]int{1, 2, 3, 4, 5}
-	arrayDinamico := []int{1, 2, 3, 4, 5}
+	array := [5]int{1, 2, 3, 4, 5}
 
-	for i := 6; i <= 20; i++ {
-		arrayDinamico = append(arrayDinamico, i) // A função append retorna uma nova cópia do array
+	j := 0
+	for i := 100; i <= 500; i += 100 {
+		array[j] = i // Modificando os elementos de um array
+		j++
 	}
 
-	fmt.Println(arrayEstatico)
-	fmt.Println(arrayDinamico)
+	fmt.Println(array)
 }
