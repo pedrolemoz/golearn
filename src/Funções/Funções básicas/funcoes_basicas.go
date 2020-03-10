@@ -58,9 +58,9 @@ func ehPrimo(numero int) bool {
 
 	if counter < 2 {
 		return true
-	} else {
-		return false
 	}
+	return false
+
 }
 
 // Função que tem um múltiplo retorno
@@ -68,7 +68,6 @@ func ehPrimo(numero int) bool {
 func getMax(x, y int) (int, int) {
 	if x > y {
 		return x, y
-	} else {
-		return y, x
 	}
+	return y, x
 }
